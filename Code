@@ -1,0 +1,31 @@
+algoritmo "buble"
+
+
+var
+
+b:vetor[1..20] de inteiro
+i,j,mudar:inteiro
+
+inicio
+
+para i de 1 ate 20 faca
+
+b[i] <-randi (1024)+1
+
+fimpara
+
+para i de 1 ate 20 faca
+para j de i + 1 ate 19 faca
+se b[i] > b[j]entao
+mudar<- b[i]
+b[i]<- b[j]
+b[j]<-mudar
+
+fimse
+fimpara
+fimpara
+
+para i de 1 ate 6 faca
+escreval(b[i])
+fimpara
+fimalgoritmo
